@@ -34,17 +34,27 @@ header {
 
 header .logo {
   position: relative;
-  color: #000;
   font-size: 30px;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 800;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
+  border-radius: 20px;
+  color: black;
+  font-size: 60px;
+  text-shadow: -2px 2px 0 #2bb7eb, 2px 2px 0 #2bb7eb, 2px -2px 0 #2bb7eb,
+    -2px -2px 0 #2bb7eb;
+  transition: 0.3s;
+  transition-property: background;
+}
+
+header .logo:hover {
+  background: #2bb7eb;
 }
 
 header .navigation a {
   color: #000;
-  background: #fff;
+  background: #2bb7eb;
   text-decoration: none;
   font-weight: 500;
   letter-spacing: 1px;
@@ -59,11 +69,13 @@ header .navigation a:not(:last-child) {
 }
 
 header .navigation a:hover {
-  background: red;
+  background: #de8eeb;
 }
 
-.content {
-  max-width: 900px;
+.content,
+.content2,
+.content3 {
+  max-width: 1500px;
   margin: 60px 100px;
 }
 
@@ -78,13 +90,14 @@ header .navigation a:hover {
 }
 
 .content .info h2 span {
-  color: #fff;
+  color: #de8eeb;
   font-size: 50px;
   font-weight: 600;
 }
 
 .content .info p {
-  font-size: 16px;
+  color: white;
+  font-size: 20px;
   font-weight: 500;
   margin-bottom: 40px;
 }
@@ -103,7 +116,7 @@ header .navigation a:hover {
 }
 
 .content .info-btn:hover {
-  background: red;
+  background: #de8eeb;
 }
 
 .media-icons {
@@ -136,6 +149,58 @@ label {
 #check {
   z-index: 3;
   display: none;
+}
+
+.content2 h2 {
+  color: #2a9ce5;
+  font-size: 55px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+
+.content2 h4 {
+  color: #de8eeb;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+
+.content2 p {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.content3 h2 {
+  color: #2a9ce5;
+  font-size: 55px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+
+.content3 h4 {
+  color: #de8eeb;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+
+.content3 p {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 /* responsive styles*/

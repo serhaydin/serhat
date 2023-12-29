@@ -17,10 +17,9 @@
         <h2><a href="#" class="logo"> COUNTDOWN </a></h2>
         <div class="navigation">
           <a href="#section1">Home</a>
-          <a href="#section2">About</a>
-          <a href="#">Info</a>
-          <a href="#">Services</a>
-          <a href="#">Contact</a>
+          <a href="#section2">Info</a>
+          <a href="#section3">Rules</a>
+          <a href="#section4">About Us</a>
         </div>
         <label for="check">
           <i class="fas fa-bars menu-btn"></i>
@@ -42,7 +41,7 @@
       </div>
     </section>
     <section id="section2">
-      <div class="content">
+      <div class="content2">
         <br />
         <h2>About The Game</h2>
         <p>
@@ -56,13 +55,14 @@
         </p>
         <br />
         <h4>Game Characters</h4>
-        <p>P represents the human player who plays the game.</p>
-        <p>'P' is moved via cursor keys.</p>
-        <p>At the beginning human player has 5 lives</p>
-        <p>Numbers which are generated randomly is from 0 to 9.</p>
         <p>
-          Number 0 is alive can move randomly in 4 directions. Other numbers are
-          static
+          P represents the human player who plays the game. 'P' is moved via
+          cursor keys.
+        </p>
+        <p>At the beginning human player has 5 lives</p>
+        <p>
+          Numbers which are generated randomly is from 0 to 9. Number 0 is alive
+          can move randomly in 4 directions. Other numbers are static
         </p>
         <br />
         <h4>Game Initialization</h4>
@@ -71,7 +71,6 @@
         <p>-- 3x Long Wall which has length of 11</p>
         <p>-- 5x Medium Wall which has length of 7</p>
         <p>-- 20x Short Wall which has length of 3</p>
-        <br />
         <p>Human player 'P' is located randomly on an empty space.</p>
         <p>Numbers are also randomly generated on empty spaces.</p>
       </div>
@@ -82,31 +81,34 @@
       </div>
     </section>
     <section id="section3">
-      <div class="content">
+      <div class="content3">
         <h2>Game Rules</h2>
-        <p>-- Displayed time unit in the game is approximately 1 second</p>
+        <h4>Basic Game Rules</h4>
+        <p>--> Displayed time unit in the game is approximately 1 second</p>
         <p>
-          -- If number 0 and 'P' encounters on the same square 'P' loses a life
+          --> If number 0 and 'P' encounters on the same square 'P' loses a life
         </p>
-        <p>-- If 'P' loses all 5 of it's lives the game is over</p>
+        <p>--> If 'P' loses all 5 of it's lives the game is over</p>
         <p>
-          -- 'P' can push non-increasing number sequences, if there is an empty
+          --> 'P' can push non-increasing number sequences, if there is an empty
           square behind the number
         </p>
+        <h4>Pushing/Smashing Rules</h4>
         <p>
-          -- if there is a wall behind the last number 'P' can smash the last
+          --> If there is a wall behind the last number 'P' can smash the last
           number when pushing non-increasing number sequences. P cannot smash
           the number in the neighboring square. Non-pushable sequences are also
           non-smashable.
         </p>
         <p>
-          -- For each smashed number, a new random number (5, 6, 7, 8 or 9 with
+          --> For each smashed number, a new random number (5, 6, 7, 8 or 9 with
           equal probability) is generated in a random place.
         </p>
-        <p>-- Smashing 0 will gain player 20 points.</p>
-        <p>-- Smashing 1,2,3 and 4 will gain player 2 points.</p>
-        <p>-- Smashing 5,6,7,8 and 9 will gain player 1 points.</p>
+        <p>--> Smashing 0 will gain player 20 points.</p>
+        <p>--> Smashing 1,2,3 and 4 will gain player 2 points.</p>
+        <p>--> Smashing 5,6,7,8 and 9 will gain player 1 points.</p>
       </div>
     </section>
+    <section id="section4"></section>
   </body>
 </html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section id="section1">
+      <input type="checkbox" id="check" />
+      <header>
+        <h2><a href="#" class="logo"> COUNTDOWN </a></h2>
+        <div class="navigation">
+          <a href="#section1">Home</a>
+          <a href="#section2">About</a>
+          <a href="#">Info</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </div>
+        <label for="check">
+          <i class="fas fa-bars menu-btn"></i>
+          <i class="fas fa-times close-btn"></i>
+        </label>
+      </header>
+      <div class="content">
+        <div class="info">
+          <h2>Crash Numbers <br /><span>Dodge Zeros</span></h2>
+          <p>
+            In "Countdown" you control 'P' among 70 numbers. Your mission is to
+            push and strategically maneuver these numbers, earning points by
+            smashing them against walls. But beware, within this dynamic
+            labyrinth, zeros roam unpredictably, threatening 'P'. An encounter
+            with these zeroes will cost 'P' a life.
+          </p>
+          <a href="#section2" class="info-btn">More Info</a>
+        </div>
+      </div>
+    </section>
+    <section id="section2">
+      <div class="content">
+        <br />
+        <h2>About The Game</h2>
+        <p>
+          Aim of the game "Countdown" is collecting treasures while walking in
+          the maze. In this game treasures are numbers. The game is played in a
+          23x53 game field including outer walls. Game characters are 'P' and
+          numbers. Main mechanic of the game is countdown mechanic. Countdown
+          action is happening in every 15 seconds. And countdown basically
+          decreases the values of every number except 0 and 1. Number 1 has a %3
+          chance of turning into number 0 and become alive.
+        </p>
+        <br />
+        <h4>Game Characters</h4>
+        <p>P represents the human player who plays the game.</p>
+        <p>'P' is moved via cursor keys.</p>
+        <p>At the beginning human player has 5 lives</p>
+        <p></p>
+        <p>Numbers which are generated randomly is from 0 to 9.</p>
+        <p>
+          Number 0 is alive can move randomly in 4 directions. Other numbers are
+          static
+        </p>
+        <br />
+        <h4>Game Initialization</h4>
+        <p>The inner walls in the game area are generated in random places</p>
+        <p>There are 3 types of inner walls:</p>
+        <p>-- 3x Long Wall which has length of 11</p>
+        <p>-- 5x Medium Wall which has length of 7</p>
+        <p>-- 20x Short Wall which has length of 3</p>
+        <br />
+        <p>Human player 'P' is located randomly on an empty space.</p>
+        <p>Numbers are also randomly generated on empty spaces.</p>
+      </div>
+      <div class="media-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </section>
+    <section id="section3">
+      <div class="content">
+        <h2>Game Rules</h2>
+        <p>-- Displayed time unit in the game is approximately 1 second</p>
+        <p>
+          -- If number 0 and 'P' encounters on the same square 'P' loses a life
+        </p>
+        <p>-- If 'P' loses all 5 of it's lives the game is over</p>
+        <p>
+          -- 'P' can push non-increasing number sequences, if there is an empty
+          square behind the number
+        </p>
+        <p>
+          -- if there is a wall behind the last number 'P' can smash the last
+          number when pushing non-increasing number sequences. P cannot smash
+          the number in the neighboring square. Non-pushable sequences are also
+          non-smashable.
+        </p>
+        <p>
+          -- For each smashed number, a new random number (5, 6, 7, 8 or 9 with
+          equal probability) is generated in a random place.
+        </p>
+        <p>-- Smashing 0 will gain player 20 points.</p>
+        <p>-- Smashing 1,2,3 and 4 will gain player 2 points.</p>
+        <p>-- Smashing 5,6,7,8 and 9 will gain player 1 points.</p>
+      </div>
+    </section>
+  </body>
+</html>

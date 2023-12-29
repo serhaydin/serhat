@@ -106,7 +106,7 @@ header .navigation a:hover {
 .content2,
 .content3,
 .content4 {
-  max-width: 1500px;
+  min-width: 1500px;
   margin: 60px 100px;
 }
 

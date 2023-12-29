@@ -11,7 +11,6 @@ html {
 }
 
 section {
-  align-items: center;
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -83,15 +82,21 @@ header {
 }
 
 header .navigation a {
-  color: #000;
-  background: #2bb7eb;
-  text-decoration: none;
-  font-weight: 500;
-  letter-spacing: 1px;
-  padding: 2px 15px;
-  border-radius: 20px;
-  transition: 0.3s;
-  transition-property: background;
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+}
+
+header .navigation a {
+  background: rgb(0, 140, 255);
+  box-shadow: 0 0 25px rgb(0, 140, 255);
 }
 
 header .navigation a:not(:last-child) {
@@ -99,13 +104,15 @@ header .navigation a:not(:last-child) {
 }
 
 header .navigation a:hover {
-  background: #de8eeb;
+  box-shadow: 0 0 5px rgb(0, 140, 255), 0 0 25px rgb(0, 140, 255),
+    0 0 50px rgb(0, 140, 255), 0 0 100px rgb(0, 140, 255);
 }
 
 .content,
 .content2,
 .content3,
 .content4 {
+  max-width: 1500px;
   margin: 60px 100px;
 }
 

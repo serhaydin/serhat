@@ -117,6 +117,7 @@ header .navigation a:hover {
 }
 
 .content .info h2 {
+  text-shadow: #2a9ce5 0 0 10px;
   padding-top: 170px;
   color: #2a9ce5;
   font-size: 55px;
@@ -128,6 +129,7 @@ header .navigation a:hover {
 }
 
 .content .info h2 span {
+  text-shadow: #de8eeb 0 0 10px;
   color: #de8eeb;
   font-size: 50px;
   font-weight: 600;
